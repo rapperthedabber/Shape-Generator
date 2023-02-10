@@ -1,7 +1,7 @@
 # Shape-Generator
 
 ![image](https://user-images.githubusercontent.com/116526260/217990514-77433b90-4110-44ef-9675-7fb6afe1a182.png)
-
+![image](https://user-images.githubusercontent.com/116526260/217990664-7e0bb2dc-bae1-4fa4-bd79-0ebde4d45c2a.png)
 
   # Description 
 
