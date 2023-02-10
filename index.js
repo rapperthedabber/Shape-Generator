@@ -2,7 +2,7 @@ const inquirer = require('inquirer')
 const fs = require("fs/promises")
 const Markdown = require("./utils/generateMarkdown")
 const path = require("path");
-
+module.exports = init;
 const askMe = [{
   type: 'input',
   message: 'What color would you like your shape to be?',

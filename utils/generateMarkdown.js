@@ -1,5 +1,7 @@
 //require("./dist/index.html");
 module.exports = generateMarkdown;
+module.exports = renderCircle;
+module.exports = renderRectangle;
 
 //const shapeText = document.getElementById("shapeText")
 //const shapeDiv = document.getElementById("shape")
