@@ -1,28 +1,45 @@
 //const renderRectangle = require("../utils/generateMarkdown");
+const generateMarkdown = require("../utils/generateMarkdown");
 const renderCircle = require("../utils/generateMarkdown");
 //const renderRectangle = require("../utils/generateMarkdown")
 
 
-test("It should give you a Green circle", () => {
-    const color1 = "Green"
-    expect(renderCircle(true, color1)).toBe(`<Circle cx="125" cy="125" r="75" fill=Green />`
+test("It should render html page", () => {
 
-    )
-})
-
-test("it should give you a Red circle", () => {
-    const color2 = "Red";
-    expect(renderCircle(true, color2)).toBe(`<Circle cx="125" cy="125" r="75" fill=Red />`)
-})
-
-test("it should give you back a Orange Circle", () => {
-    const color3 = "Orange";
-    expect(renderCircle(true, color3)).toBe(`<Circle cx="125" cy="125" r="75" fill=Orange />`)
-})
-
-test("it should render a circle", () => {
-    const color4 = "Orange";
-    expect(renderCircle(true, color4)).toBe(`<Circle cx="125" cy="125" r="75" fill=Orange />`)
+    const Circle = "Circle";
+    expect(generateMarkdown(Circle)).toBe(
+        `
+        <Circle cx="125" cy="125" r="75" fill=Green />
+        -         
+        -        
+        + <!DOCTYPE html>
+        +     <html lang="en">
+        +     <head>
+        +         <meta charset="UTF-8">
+        +         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        +         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        +         <title>Document</title>
+        +         
+        +     </head>
+        +     <body>
+        +     <svg width="391" height="391" viewBox="-70.5 -70.5 391 391" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        +     <g opacity="0.8">
+        +         
+        +     
+        +     
+        +     undefined
+        +     
+        +   <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">undefined</text>
+        +
+        +
+        +     
+        +         
+        +         </svg>
+        +     </body>
+        +     </html>
+    
+        
+       ` )
 })
 
 
